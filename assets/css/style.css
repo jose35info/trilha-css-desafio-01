@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #33a8db;
+  --secondary-color: #ffffff;
+  /* --tertiary-color: #1472b7; */
+  --quaternary-color: #000000;
+  --font-main: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--quaternary-color);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 605px;
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid 2px var(--primary-color);
+  margin: auto;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 393px;
+  width: 100%;
+  margin: auto;
+}
+.banner-content h1 {
+  background: linear-gradient(var(--primary-color), var(--tertiary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  margin: 20px;
+}
+.banner-content p {
+  font-size: 20px;
+  color: var(--secondary-color);
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+  word-spacing: -1px;
+  margin: 0 0 20px;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+}
+.banner-content button {
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  padding: 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.banner-content button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+/* SEÇÃO 02 */
+
+#course-content {
+  width: 60%;
+  height: 324px;
+  margin: auto;
+}
+#course-content h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 32px;
+  line-height: 100%;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+#course-content p {
+  color: var(--secondary-color);
+  text-align: left;
+  padding: 5px;
+}
+.module {
+  background-color: #2a3439;
+  border: 1px solid var(--primary-color);
+  box-shadow: -2px 6px 4px 0px #00000066 inset;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 535px;
+  text-align: center;
+  line-height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+.module:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: 0.3s;
+}
+.module span {
+  color: var(--primary-color);
+  font-weight: 400;
+}
+.module p {
+  display: inline;
+}
+/* seção3 */
+#transform-world {
+  background-image: url(../images/woman-code.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 50px;
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+#transform-world p {
+  color: var(--secondary-color);
+  font-size: 60px;
+  font-weight: 900;
+  text-align: left;
+  padding: 20px;
+  margin: 50px;
+  width: 100%;
+  max-width: 400px;
+  line-height: 100%;
+  display: inline-block;
+  text-shadow: 1px 1px 0 var(--primary-color), 2px 2px 0 var(--secondary-color),
+    3px 3px 0 var(--primary-color), 4px 4px 0 var(--secondary-color);
+}
+
+#professional-challenges h2 {
+  font-size: 32px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 50px auto;
+}
+#professional-challenges img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 10px auto;
+
+  display: block;
+}
+#professional-challenges p {
+  color: var(--secondary-color);
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+}
+/* FOOTER */
+footer {
+  background: linear-gradient(
+    to bottom,
+    var(--quaternary-color),
+    var(--primary-color)
+  );
+  padding: 40px;
+  border-top: solid 1px var(--primary-color);
+  margin: 0px auto;
+}
+footer img {
+  width: 100%;
+  max-width: 310px;
+  height: 44px;
+  margin: auto;
+  display: block;
+}
+footer p {
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
